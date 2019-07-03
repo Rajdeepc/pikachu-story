@@ -1,12 +1,12 @@
-import { connect } from 'react-redux';
-import PikachuSearchComponent from './PikachuSearchComponent';
-import { searchedPikachuList } from './pikachu.action';
+// import { connect } from 'react-redux';
+// import PikachuSearchComponent from './PikachuSearchComponent';
+// import { searchedPikachuList } from './pikachuSearch.action';
 
 
-const mapStateToProps = (state) => ({
-    PikachuSearchReducerState: PikachuSearchReducer.state
-})
+// const mapStateToProps = (state) => ({
+    
+// })
 
-export default connect(mapStateToProps, {
-    searchedPikachuList
-})(PikachuSearchComponent)
+// export default connect(mapStateToProps, {
+//     searchedPikachuList
+// })(PikachuSearchComponent)

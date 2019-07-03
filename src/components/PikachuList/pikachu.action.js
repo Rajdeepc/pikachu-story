@@ -1,7 +1,6 @@
 import {
   GET_PIKACHU_LIST_SUCCESS,
   GET_PIKACHU_LIST_FAILURE,
-  SEARCH_VALUE_TEXT
 } from "./pikachu.types";
 
 import axios from "axios";

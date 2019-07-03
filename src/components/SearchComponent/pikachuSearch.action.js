@@ -8,4 +8,4 @@ const searchedPikachuList = (value) => dispatch => {
     })
   }
 
-export {searchedPikachuList }
+export { searchedPikachuList }
