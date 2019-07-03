@@ -5,7 +5,7 @@ import { getFilteredSearchPikachu } from '../../selectors/searchSelector';
 
 
 const mapStateToProps = (state) => ({
-    searchResults: getFilteredSearchPikachu(state)
+    searchPikachuResults: getFilteredSearchPikachu(state)
 })
 
 export default connect(mapStateToProps, {

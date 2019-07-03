@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect'
 
-const getPikachuList = (state) => state.pikachuReducerState.collection;
-const getSearchPikachuValue = (state) => state.PikachuSearchReducerState.searchValue;
+const getPikachuList = (state) => state.collection;
+const getSearchPikachuValue = (state) => state.searchValue;
 
 export const getFilteredSearchPikachu = createSelector(
     [getPikachuList,getSearchPikachuValue],
