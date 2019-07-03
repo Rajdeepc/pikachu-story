@@ -2,6 +2,8 @@
 
 This is a fun project build with [PokeAPI](https://pokeapi.co/) where you can find your favorite pikachu and know more details about them.
 
+### Live (http://aboriginal-pokemon.surge.sh/)
+
 ### Project Description:
  * List Page:
     - List the pikachu from (https://pokeapi.co/) - Number of Pikachu to list is configurable
@@ -95,4 +97,4 @@ npm start
 ![Details Page](insidepokemon.png)
 
 
-#### This project was a part of ReactJS community examples by @alik0211 . I have used the idea to create my own with the help of Reselect library and Redux.
+#### This project was a part of ReactJS community examples by @alik0211 . I have used the idea to create my own with the help of Reselect library and Redux.cd
