@@ -26,12 +26,15 @@ export default class PikaChuList extends Component {
             <Image className="bannerImage" src="http://pluspng.com/img-png/pokemon-logo-png-image-logo-de-pokemon-en-png-heroism-wiki-fandom-powered-by-wikia-1300.png" />
         </div>
      <PikachuSearchComponent {...this.props}/>
+     <Row>
+       <Col>{this.props.searchPikachuResults.length} Items Found</Col>
+     </Row>
       <Row>
-        {this.props.searchPikachuResults.map((item, i) => (
+        {this.props.searchPikachuResults.length > 0 ? this.props.searchPikachuResults.map((item, i) => (
             <Col xs={2} key={item.id}>
               <PikachuItemComponent item={item} {...this.props}/>
             </Col>
-        ))}
+        )) : <div/>}
      </Row>
      </div>
     );

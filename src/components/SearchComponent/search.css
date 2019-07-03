@@ -9,3 +9,6 @@
     padding: 1.4em;
 }
 
+input:focus, input:focus{
+    outline: none;
+}

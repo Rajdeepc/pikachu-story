@@ -9,6 +9,10 @@ export default class PikachuSearchComponent extends Component {
           }
     }
 
+    componentDidMount(){
+      this.props.searchedPikachuList(this.state.search);
+    }
+
     handleChange = (event) => {
         this.setState({
           search:event.target.value
