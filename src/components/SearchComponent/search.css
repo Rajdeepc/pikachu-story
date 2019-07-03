@@ -3,6 +3,9 @@
 }
 .searchInput input {
     height: 40px;
-    width:100%
+    width: 100%;
+    border-radius: 32px;
+    border: 1px solid #ccc;
+    padding: 1.4em;
 }
 

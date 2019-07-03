@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Row,Col,Image } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import './pikachu.css';
 export default class PikachuItemDetailsComponent extends Component {
 
   componentDidMount(){
@@ -14,9 +15,10 @@ export default class PikachuItemDetailsComponent extends Component {
     
 
     return (
-      
+      <div>
+     
       <div className="container">  
-      <Link to={'/'}>Back</Link>      
+      <Link className="goBack" to={'/'}>Back</Link>      
         <div className="text-center">
             <Image className="bannerImage" src="http://pluspng.com/img-png/pokemon-logo-png-image-logo-de-pokemon-en-png-heroism-wiki-fandom-powered-by-wikia-1300.png" />
         </div>
@@ -35,6 +37,7 @@ export default class PikachuItemDetailsComponent extends Component {
           </Col>
 
         </Row>
+      </div>
       </div>
     )
   }

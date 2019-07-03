@@ -3,3 +3,11 @@
     height:auto;
     margin: 2em 0em
 }
+.card{
+    margin-bottom: 2em
+}
+.card-title {
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+}

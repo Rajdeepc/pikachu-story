@@ -17,7 +17,7 @@ export default class PikachuItemComponent extends Component {
         onClick={() => this.navigateToshowDetails(this.props.item)}
       >
         <div className="text-center">
-          <Card.Img
+          <Image
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
               this.props.item.id
             }.png`}
