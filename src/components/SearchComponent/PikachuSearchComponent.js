@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {Form} from 'react-bootstrap';
+import './search.css';
+
 export default class PikachuSearchComponent extends Component {
     constructor(props){
         super(props);
@@ -18,8 +19,8 @@ export default class PikachuSearchComponent extends Component {
 
   render() {
     return (
-      <div>
-        <input type="text" placeholder="Search Pikachu..." onChange={this.handleChange} />
+      <div className="searchInput">
+          <input type="text" placeholder="Search Pikachu..." onChange={this.handleChange} />
       </div>
     )
   }

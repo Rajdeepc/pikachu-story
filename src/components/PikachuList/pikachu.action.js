@@ -27,4 +27,5 @@ const getAllPikachu = () => dispatch => {
 
 
 
+
 export { getAllPikachu };

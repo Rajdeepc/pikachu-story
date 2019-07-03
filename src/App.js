@@ -1,8 +1,8 @@
 import React from 'react';
-import PikaChuList from '../src/components/PikachuList/pikachu.container';
+import Routes from './routes';
 function App() {
   return (
-   <PikaChuList/>
+    <Routes></Routes>
   );
 }
 

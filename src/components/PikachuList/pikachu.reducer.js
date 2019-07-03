@@ -1,9 +1,11 @@
-import { GET_PIKACHU_LIST_SUCCESS,GET_PIKACHU_LIST_FAILURE } from './pikachu.types';
-
+import {
+  GET_PIKACHU_LIST_SUCCESS,
+  GET_PIKACHU_LIST_FAILURE
+} from "./pikachu.types";
 
 const INITIAL_STATE = {
-    collection: {},
-    pikachuListError:{},
+    collection: [],
+    pikachuListError:{}
 }
 
 const PikaChuReducer =  (state = INITIAL_STATE, action) => {
@@ -11,21 +13,11 @@ const PikaChuReducer =  (state = INITIAL_STATE, action) => {
      case GET_PIKACHU_LIST_SUCCESS:
       return {
           ...state,
-          collection: {
-            ...state.collection,
-            ...action.payload.reduce((accumulator, item) => {
-              const { url } = item
-              const id = url.substring(34, url.length - 1)
-  
-              return {
-                ...accumulator,
-                [id]: {
-                  id,
-                  ...item
-                }
-              }
-            }, {})
-          },
+          collection: action.payload.map(el => ({
+            ...el,
+            id: el.url.substring(34, el.url.length - 1)
+        }))
+
       }
       
       case GET_PIKACHU_LIST_FAILURE:
@@ -33,6 +25,8 @@ const PikaChuReducer =  (state = INITIAL_STATE, action) => {
               ...state,
             pikachuListError: action.payload
           }
+
+     
      default:
       return state
     }
