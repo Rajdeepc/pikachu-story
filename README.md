@@ -1,68 +1,102 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pikachu Finder
 
-## Available Scripts
+This is a fun project build with [PokeAPI](https://pokeapi.co/) where you can find your favorite pikachu and know more details about them.
 
-In the project directory, you can run:
+### Project Description:
+ * List Page:
+    - List the pikachu from (https://pokeapi.co/) - Number of Pikachu to list is configurable
+    - It has a search feature which searches by keyword
+    - You can see the details of each Pikachu once you click on each of them
 
-### `npm start`
+* Pikachu Details Page: 
+    - Lists the description of each pikachu
+    - can go back to previous listing page with go button
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Getting Started
+To get you started you can simply clone the repository:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
+git clone https://github.com/Rajdeepc/pikachu-story.git
+```
 
-### `npm test`
+### Prerequisites
+You need git to clone the repository. You can get git from
+[http://git-scm.com/](http://git-scm.com/).
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A number of node.js tools is necessary to initialize and test the project. You must have node.js and its package manager (npm) installed. You can get them from  [http://nodejs.org/](http://nodejs.org/).
 
-### `npm run build`
+### Installing
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+and install the dependencies
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+#### Lint & Build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm run lint
+npm run build
+```
 
-### `npm run eject`
+### Running the tests
+```
+npm test
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Run in Local
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To Run Locally Steps to follow:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Run
+```
+npm start
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Built With
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [React js](https://github.com/facebook/react/)
+* [Reslect](https://github.com/reduxjs/reselect)
+* [React Bootstrap](https://react-bootstrap.github.io/)
+* [Redux](https://github.com/reduxjs/redux)
+* [React-Router 3](https://github.com/ReactTraining/react-router)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Create a branch
 
-### Analyzing the Bundle Size
+1. `git checkout master` from any folder in your local `https://github.com/Rajdeepc/pikachu-story.git` repository
+1. `git pull origin master` to ensure you have the latest main code
+1. `git checkout -b the-name-of-my-branch` (replacing `the-name-of-my-branch` with a suitable name) to create a branch
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Make the change
 
-### Making a Progressive Web App
+1. Follow the "Running locally" instructions
+1. Save the files and check in the browser
+  1. Changes to React components in `src` will hot-reload
+  1. Changes to markdown files in `content` will hot-reload
+  1. If working with plugins, you may need to remove the `.cache` directory and restart the server
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+### Push it
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+1. `git add -A && git commit -m "My message"` (replacing `My message` with a commit message, such as `Fixed header logo`) to stage and commit your changes
+1. `git push my-fork-name the-name-of-my-branch`
+1. Go to the [pikachu-story](https://github.com/Rajdeepc/pikachu-story.git) and you should see recently pushed branches.
+1. Follow GitHub's instructions.
+1. If possible, include screenshots of visual changes. A Netlify build will also be automatically created once you make your PR so other people can see your change.
 
-### Deployment
+### Some Glimpses:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Pokemon Listing Page
+![Pokemon Listing Page](pokemondash.png)
 
-### `npm run build` fails to minify
+## Details Page
+![Details Page](insidepokemon.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
