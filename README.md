@@ -48,7 +48,6 @@ npm test
 
 To Run Locally Steps to follow:
 
-* Run
 ```
 npm start
 
@@ -96,4 +95,4 @@ npm start
 ![Details Page](insidepokemon.png)
 
 
-### This project was a part of ReactJS community examples by @alik0211 . I have used the idea to create my own with the help of Reselect library and Redux.
+#### This project was a part of ReactJS community examples by @alik0211 . I have used the idea to create my own with the help of Reselect library and Redux.
