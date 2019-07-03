@@ -52,7 +52,7 @@ To Run Locally Steps to follow:
 ```
 npm start
 
-
+```
 ### Built With
 
 * [React js](https://github.com/facebook/react/)
@@ -96,7 +96,4 @@ npm start
 ![Details Page](insidepokemon.png)
 
 
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+### This project was a part of ReactJS community examples by @alik0211 . I have used the idea to create my own with the help of Reselect library and Redux.
